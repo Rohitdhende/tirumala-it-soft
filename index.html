@@ -1,0 +1,399 @@
+<html>
+    <head><title>Tirumalasoft</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .d-flx{
+            display: flex;
+        }
+        .lin-ml{
+            line-height: 2;margin-left:30%
+        }
+        .ecom-d{
+            display: flex;  text-align: left;    padding-left: 10%; 
+        }
+        .con-d{
+            display: flex;  text-align: left;
+        }
+        a{
+    color: white;
+     }
+     body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+        
+    .head1{
+        font-size: 30px;
+    padding: 2%;
+    }
+    .header{
+        /* background: #4c6085; */
+        background: black;
+        color: white;
+        display: inline-flex;
+        width: 100%;
+    }
+    .navig{
+        margin-left: auto;
+        line-height: 6;
+        padding-right: 25px;
+        font-size: larger;
+    }
+    .p-2{
+        padding: 2%;
+        /* FONT-FAMILY: cursive; */
+    }
+    .thead{
+        text-align: center;
+    background-color: lightgray;
+    margin-top: 0px;
+    font-size: 25px;
+    padding: 10px;
+    }
+
+  input {
+    border-radius:0;
+    height:50px;
+    font-size:12px;
+    color:#999;
+    min-width: 200px;
+    width: 80vh;
+  } 
+  .form-group{
+    padding:10px;
+  }
+  textarea {
+    border-radius:0;
+    font-size:12px;
+    color:#999;
+    min-width: 200px;
+    width: 80vh;
+  }
+  .submit-button {
+    background: #00AEEF;
+    color:#fff;
+    font-size:12px;
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing:1px;
+    
+  }
+  @keyframes color-transition {
+	0% {
+		background-color: #a0c800;
+		border-color: #a0c800;
+	}
+	33% {
+		background-color: #80D39B;
+		border-color: #80D39B;
+	}
+	66% {
+		background-color: #BE3E82;
+		border-color: #BE3E82;
+	}
+	100% {
+		background-color: #4C6085;
+		border-color: #4C6085;
+	}
+}
+@-webkit-keyframes color-transition {
+	0% {
+		background-color: #a0c800;
+		border-color: #a0c800;
+	}
+	33% {
+		background-color: #80D39B;
+		border-color: #80D39B;
+	}
+	66% {
+		background-color: #BE3E82;
+		border-color: #BE3E82;
+	}
+	100% {
+		background-color: #4C6085;
+		border-color: #4C6085;
+	}
+}
+.blink {
+    animation: blink 1s steps(1, end) infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .submit-button-b {
+    font-size: 4vw;
+    background-color: #a0c800;
+    text-decoration: none;
+    padding: 5px;
+    /* position: absolute; */
+    top: 3px;
+    right: 3px;
+    color: white;
+    border: 1px solid lightgreen;
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 3px;
+    margin-left: 15%;
+    -webkit-animation-name: color-transition;
+	animation-name: color-transition;
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	/*default value for timing-function is ease, we'll specify linear to keep the same timing through out*/
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+    cursor: pointer;
+  }
+ 
+  @media screen and (max-width: 850px) {
+      .img-h{
+          height: 250px;
+      }
+      h3{
+        font-size: 4vw;
+      }
+      h2 {
+        word-wrap: break-word;
+        width: 89%;
+    }
+    .ecom-d{
+            display:block;  text-align: left;    padding-left: 10%; 
+        }
+        .con-d {
+    display: block;
+    text-align: left;
+  }
+  input {
+    border-radius: 0;
+    height: 50px;
+    font-size: 12px;
+    color: #999;
+    min-width: 200px;
+    width: auto;
+}
+textarea {
+    border-radius: 0;
+    font-size: 12px;
+    color: #999;
+    min-width: 200px;
+    width: auto;
+}
+    .thead {
+    text-align: center;
+    background-color: lightgray;
+    margin-top: 0px;
+    font-size: 12px;
+    padding: 9px;
+}
+ .s-img{
+     height: 250px;
+ }
+.d-flx {
+    display: block;
+}
+  body {
+    width: 100%;
+  }
+  .header{
+        background: black;
+        color: white;
+        display:block;
+        width: 100%;
+    }
+}
+    </style>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <img src="./goldtrans.png" height="100px"/><h2 class="p-2"> TIRUMALA IT CONSULTANCY SERIVCES</h2>
+           <nav class="navig"><a href="#home" class="p-2">Home</a><a href="#service" class="p-2">Service</a><a href="#contact" class="p-2">Contact</a></nav>
+        </div>
+        <div id="home">
+<!--         <img src="./homes.jfif" width="100%" height="450px"/>-->
+            <!-- <img src="contactsr3.jpg" width="100%" height="auto" /> -->
+            <img src="d2.jpg" width="100%" height="auto" class="img-h"/>
+         <p class="thead">We inspire from <b>Technology</b> to inspire the <b>Technology</b></p>
+        </div>
+        <div id="service">
+              <a href="#contact" class="submit-button-b"> <img src="./blinking.png" height="80px" class="blink"/> Book to Visit Your Company</a>
+            <h2><u>Hardware Services:</u></h2>
+            <div class="d-flx">
+            <ul style="line-height: 2;"><li>Hardware Supply & Maintenance</li><li>IT Consulting</li><li>CCTV Surveillance System</li>
+                <li>Laptop and PC Supply and Maintenance</li>
+                <li>Tendering IT Accessories</li><li>Intruder Alarm System</li>
+                <li>Biometric Access Control</li>
+                
+                </ul>
+<!--                <div><img src="./service3.jfif" width="auto" height="250px" style="margin-left: 80%;"/></div>-->
+                <ul class="lin-ml"><li>Time Attendance System</li><li>Electric Fencing</li><li>Intercoms System</li>
+                    <li>Data Recovery</li>
+                    <li>AMC</li><li>Networking</li>
+                    <li>CCTV Cameras</li>
+                    
+                    </ul>
+                
+                </div>
+             <div style="padding:2%;">
+              <img src="./service1.jfif" width="100%" height="200px"/>
+              
+              <!-- <img src="./service4.jfif" width="45%" height="200px"/> -->
+<!--              <img src="./service6.jfif" width="45%" height="200px"/>-->
+             </div>
+
+        </div>
+        <div>
+            <h2><u>Software Services:</u></h2>
+            <div class="d-flx">
+            <ul style="line-height: 2;"><li>Website Design & Development</li><li>Software Development</li><li>Web Portal Development</li>
+                <li>E-Commerce Website Development</li>
+                <li>Company Branding</li><li>Mobile Application</li>
+                <li>Cloud Services</li>
+                <li>SAAS Startup or Bussiness </li>
+                <li>CRM Software Solutions Bussiness</li>
+                <li>Cyber Security Software Solutions</li>
+                <li>Educational Software Biz </li>
+                <li>Game Development Solutions Biz</li>
+                <li>Internet of Things Solutions Biz</li>
+                <li>AI and ML Powered Solutions Biz</li>
+                <li>Industry Segment Solutions of Software Biz</li>
+                <li>Data Security</li>
+                
+                </ul>
+                <div>
+                    <img src="softwareser.jpg" class="s-img"/>
+                </div>
+            </div>
+        </div>
+        <div style=" background: black;color: white;text-align: center;">
+            <h2><u>E-Commerce Business Management Software</u></h2>
+            <div class="ecom-d">
+            <ul style="line-height: 2;"><li>GST Billing & E-Way Bill</li><li>Staff Management</li><li>Order Management</li>
+                <li>Order Booking</li>
+                <li>Reports & DashBoard</li><li>Sales Analysis</li>
+                <li>Activity Analysis</li>
+                
+                </ul>
+                <div class="p-2">
+                <img src="./e-commerce2.jfif" height="200px" /></div>
+                <ul style="line-height: 2;text-align: left;"><li>Retail Management</li><li>Distribution Management</li><li>Inventory Management</li>
+                    <li>Stock & Sales Management</li>
+                    <li>Live Stock & Product Status</li><li>Import / Export Purchase</li>
+                    <li>Bill / Invoice Printing </li>
+                    
+                    </ul>
+                </div>
+        </div>
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        <div><img src="./contacts.jfif" height="500px" width="100%"/>
+        <div id="contact" style=" background:#a6ce39;color: white;text-align: center;
+        margin-top: -19px;">
+            <h2 class="p-2"><u>Contact Us</u></h2>
+            <div class="con-d">
+                
+                <table style="color:white;">
+                    <tr><td><a href="https://wa.me/+919004263590"><img src="./phone.jpg" height="40px"/></a></td><td><a style="text-decoration: none;" href="https://wa.me/+919004263590"><label class="p-2">+91 9004263590</label></a></td></tr><br/>
+                   <tr> <td><img src="./mail2.png" height="40px"/></td><td><label class="p-2">tirumala001it@gmail.com <br/>nareshtekmalle@gmail.com</label></td></tr><br/>
+                   <tr><td> <img src="./map.png" height="40px"/></td><td><label class="p-2">Block-1/10,Ekta Society,Prem Nager,Tunga Village,<br/>Sakivihar road,Sakinaka powai,Andheri(e),Mumbai-400072</label></td></tr>
+                </table>
+                <div class="contact-form-wrapper">
+                        
+                       
+                     <form id="contact-form" class="contact-form"  target="_blank" action="https://formsubmit.co/62d9347b663e446c409e66aff5c0bcd9" method="POST" role="form">
+                        <div class="form-group">
+                                 <input type="text" placeholder="Your Name" class="form-control" name="name" id="name" required>
+                        </div>
+                        <div class="form-group">
+                                <input type="text" placeholder="Your Company Name" class="form-control" name="cname" id="cname" required>
+                       </div>
+                         <div class="form-group">
+                             <input type="email" placeholder="Your Email" class="form-control" name="email" id="email" required >
+                         </div>
+                     
+                         <div class="form-group">
+                             <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject" required>
+                         </div>
+                     
+                         <div class="form-group">
+                             <textarea rows="6" placeholder="Message" class="form-control" name="message"id="message" required></textarea>    
+                         </div>
+                     
+                         <div id="submit" class="form-group">
+                             <input type="submit" id="contact-submit" class="btn btn-default submit-button" value="Send Message" />
+                         </div>
+                     </form>
+                       
+                     </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
